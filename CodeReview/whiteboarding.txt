@@ -1,0 +1,37 @@
+I did my code review using Code Bunk but then copy/pasted my code/problem into this txt file in VS code:
+
+-----------------------------------------------------------------------------
+
+write an alg that removes duplicates from an array
+
+-can not use filter() method
+
+-once solved, can solve with filter or try with recursion
+    -not case sensitive
+
+input: ['7', '9', 'hi', '12', 'hi', '7', '53']
+output: ['7', '9', 'hi', '12', '53']
+
+-Code this in JavaScript
+
+USING THE A METHOD THAT IS NOT FILTER:
+
+function removeDups(arr) {
+    return [...new Set(arr)];
+};
+
+How to call on function: removeDups(['7', '9', 'hi', '12', 'hi', '7', '53']);
+
+
+FILTER() METHOD:
+
+function removeDups(arr) {
+    return arr.filter((value, index) => arr.IndexOf(value === index));
+ };
+
+How to call on function: removeDups(['7', '9', 'hi', '12', 'hi', '7', '53']);
+
+
+
+**Did not have time to do the recursion part of the problem**
+---------------------------------------------------------------------------------------------
